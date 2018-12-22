@@ -11,7 +11,7 @@
      * 缺点：无法对 instance 实例进行延时加载
      * 优化：懒汉式
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class HungrySingleton {
@@ -32,7 +32,7 @@
      * 缺点：再多线程并发情况下无法保证实例的唯一性
      * 优化：懒汉线程安全
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class LazySingleton {
@@ -57,7 +57,7 @@
      * 缺点：使用 synchronized 导致性能缺陷
      * 优化：DCL 双重检查锁
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class LazySafetySingleton {
@@ -100,7 +100,7 @@
      * 缺点：JVM 的即时编译器中存在指令重排序的优化
      * 优化：静态内部类 / 枚举
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class DclSingleton {
@@ -131,7 +131,7 @@
      * 优点：JVM 本身机制保证了线程安全，没有性能缺陷
      * 原因：static 、final
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class StaticInnerSingleton {
@@ -153,7 +153,7 @@
      * 
      * 优点：写法简单，线程安全
      * 
-     * @author bvod
+     * @author Muran Hu
      *
      */
     public class EnumSingleton {
