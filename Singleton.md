@@ -156,26 +156,6 @@
      * @author Muran Hu
      *
      */
-    public class EnumSingleton {
-      private EnumSingleton() {
-
-      }
-
-      public static EnumSingleton getInstance() {
-        return Singleton.INSTANCE.getInstance();
-      }
-
-      private static enum Singleton {
-        INSTANCE;
-
-        private EnumSingleton enumSingleton;
-
-        private Singleton() {
-          enumSingleton = new EnumSingleton();
-        }
-
-        public EnumSingleton getInstance() {
-          return enumSingleton;
-        }
-      }
+    public enum EnumSingleton {
+      INSTANCE;
     }
